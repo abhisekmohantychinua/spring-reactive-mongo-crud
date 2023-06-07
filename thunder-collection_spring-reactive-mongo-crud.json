@@ -1,0 +1,119 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "spring-reactive-mongo-crud",
+    "dateExported": "2023-06-07T05:03:16.760Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6f184fea-881b-4138-b5cb-17fab1743a23",
+            "colId": "fc997860-325e-4bdd-96a4-3feb1ec8f5a6",
+            "containerId": "",
+            "name": "save a product",
+            "url": "http://localhost:8080/products",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-06-07T04:07:50.875Z",
+            "modified": "2023-06-07T04:24:31.988Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Apple Watch 8\",\n  \"quantity\": 7,\n  \"price\": 79900\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "21597b65-20e8-4dc0-bd3b-b4cb08de228c",
+            "colId": "fc997860-325e-4bdd-96a4-3feb1ec8f5a6",
+            "containerId": "",
+            "name": "get all product",
+            "url": "http://localhost:8080/products",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-07T04:25:57.456Z",
+            "modified": "2023-06-07T04:32:01.745Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0e135500-8d7f-44f8-b20b-3aae92d217c2",
+            "colId": "fc997860-325e-4bdd-96a4-3feb1ec8f5a6",
+            "containerId": "",
+            "name": "get product by id",
+            "url": "http://localhost:8080/products/{productId}",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-06-07T04:26:45.834Z",
+            "modified": "2023-06-07T04:32:31.521Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "productId",
+                    "value": "6480063948ea2d4dcea818b5",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "b23d8066-e5f1-4c59-ad2a-ad2bb9ad7b77",
+            "colId": "fc997860-325e-4bdd-96a4-3feb1ec8f5a6",
+            "containerId": "",
+            "name": "product between range",
+            "url": "http://localhost:8080/products/range?min=100000&max=200000",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-06-07T04:33:43.803Z",
+            "modified": "2023-06-07T04:37:55.343Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "min",
+                    "value": "100000",
+                    "isPath": false
+                },
+                {
+                    "name": "max",
+                    "value": "200000",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "07d13f0f-2510-455a-abd9-667c32c56e7e",
+            "colId": "fc997860-325e-4bdd-96a4-3feb1ec8f5a6",
+            "containerId": "",
+            "name": "update a product",
+            "url": "",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-06-07T04:38:19.881Z",
+            "modified": "2023-06-07T04:38:28.144Z",
+            "headers": []
+        },
+        {
+            "_id": "cea365dc-50f3-425b-9067-54066279514c",
+            "colId": "fc997860-325e-4bdd-96a4-3feb1ec8f5a6",
+            "containerId": "",
+            "name": "delete a product",
+            "url": "localhost:8080/products/{productId}",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-06-07T04:41:33.881Z",
+            "modified": "2023-06-07T04:41:58.581Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "productId",
+                    "value": "6480061a48ea2d4dcea818b4",
+                    "isPath": true
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
